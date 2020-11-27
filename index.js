@@ -7,11 +7,10 @@ function fetchBooks() {
 function renderBooks(json) {
   console.log("inRenderBooks");
   const main = document.querySelector('main');
-  json.forEach(book => {
+  json.forEach(doodsoado => {
     const h2 = document.createElement('h2');
-    h2.innerHTML = `<h2>${book.name}</h2>`;
+    h2.innerHTML = `<h2>${doodsoado.name}</h2>`;
     main.appendChild(h2);
-    console.log("1");
   })
 }
 
